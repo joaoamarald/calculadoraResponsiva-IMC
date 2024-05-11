@@ -153,3 +153,18 @@ padding-top: 1.5rem;
 #more_info a:hover {
  color: #cbd5e1;
 }
+
+.hidden {
+    display: none;
+}
+
+.normal {
+    color: #FF6363;
+}
+
+.attention {
+    color: #dc2626;
+}
+
+/*  Reponsividade */
+
