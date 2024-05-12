@@ -8,44 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
-    <main id="container">
-        <section id="img">
-            <img src="projeto/imagens/imagem.svg">
+
+    <div id="atencao" > <!-- Aviso -->
+        <h1>Atenção</h1> 
+        Este projeto foi desenvolvido com o propósito de realizar estudos avançados <br> em JavaScript e CSS responsivo.
+        (Referência: <a href="https://youtu.be/UBYqkpsafyI?si=_noifRcPj1S0qfwv">Clique Aqui</a>)
+    </div>
+
+    <main id="container"> <!-- Container Calculadora -->
+
+        <section id="img"> <!-- Imagem a Esquerda -->
+        <img src="projeto/imagens/imagem.svg">
         </section>
+
         <section id="calculadora">
             <form id="form">
-                <h1 id="title"> Calculadora - IMC</h1>
-           
-
-            <div class="input-box">
-                <label for="weight">
-                    Peso em KG
-                </label>
-                <div class="input-field">
-                    <i class="fa-solid fa-weight-hanging"></i>
-                    <input type="number" id="weight" required>
-                    <span>
-                        KG
-                    </span>
-                </div>
-            </div>
-            <div class="input-box">
-                <label for="height">
-                    Altura em METROS
-                </label>
-                <div class="input-field">
-                    <i class="fa-solid fa-ruler"></i>
-                    <input type="number" id="height" required>
-                    <span>
-                        M
-                    </span>
-                </div>
-            </div>
-            <button id="calculate">
-                Calcular
-            </button>
+            <h1 id="title"> Calculadora - IMC</h1>
+                    <div class="input-box">
+                    <label for="weight"> Peso em KG </label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-weight-hanging"></i>
+                                <input type="number" id="weight" required>
+                                <span> KG </span>
+                            </div>
+                    </div>
+                    <div class="input-box">
+                    <label for="height"> Altura em METROS </label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" id="height" required>
+                            <span> M </span>
+                        </div>
+                    </div>
+            <button id="calculate"> Calcular </button>
             </form>
+
             <div id="infos" class="hidden">
                 <div id="result">
                     <div id="bmi">
@@ -64,7 +61,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main> <!-- FIM / Container Calculadora -->
 
     <script src="projeto/js/script.js"></script>
 
