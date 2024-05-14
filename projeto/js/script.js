@@ -3,18 +3,17 @@ const form = document.getElementById('form');
 form.addEventListener('submit', function(event) {
     event.preventDefault(); //não atualizar a pagina
     
-    const weight = document.getElementById('weight').value;
-    const height = document.getElementById('height').value;
+    const weight = parseFloat(document.getElementById('weight').value);
+    const height = parseFloat(document.getElementById('height').value);
 
     const bmi = (weight / (height * height)).toFixed(2);
 
-    const value = Document.getElementById('value');
+    const value = document.getElementById('value');
     let description = '';
 
     value.classList.add('attention');
 
     document.getElementById('infos').classList.remove('hidden');
-
 
     if(bmi < 18.5) {
         description = 'Cuidado! você está abaixo do Peso!'
